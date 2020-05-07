@@ -4,16 +4,19 @@
       <p>Carrinho: {{cart.length}}</p>
     </div>
     <product :premium="premium" @add-to-cart="updateCart"></product>
+    <Tela msg="Fiap Vue Pics" />
   </div>
 </template>
 
 <script>
 import Product from "./components/Product.vue";
+import Tela from "./components/Tela.vue";
 
 export default {
   name: "App",
   components: {
-    product: Product
+    product: Product,
+    Tela
   },
   data() {
     return {
