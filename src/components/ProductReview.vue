@@ -7,6 +7,7 @@
               <li v-for="error in errors" :key="error">{{error}}</li>
           </ul>
       </p>
+
       <p>
         <label for="name">Name:</label>
         <input id="name" v-model="name" placeholder="name">
@@ -28,7 +29,8 @@
         </select>
       </p>
 
-<p>Would you recommend this product?</p>
+      <p>Would you recommend this product?</p>
+
         <label>
           Yes
           <input type="radio" value="Yes" v-model="recommend"/>
